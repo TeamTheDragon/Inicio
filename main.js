@@ -1,8 +1,10 @@
-document.querySelector('.menu-btn').addEventListener('click', () => {
-    console.log('Abriendo el Menú de Selección...')
-    document.querySelector('.nav-menu').classList.toggle('show');
+const btn = document.querySelector('.menu-btn');
+const menu = document.querySelector('.nav-menu');
+
+btn.addEventListener('click', () => {
+    menu.classList.toggle('show');
 });
 
-ScrollReveal().reveal('.showcase', { delay: 500});
-ScrollReveal().reveal('.information', { delay: 500});
-ScrollReveal().reveal('.final', { delay: 500});
+ScrollReveal().reveal('.showcase', { delay: 300 });
+ScrollReveal().reveal('.information', { delay: 300 });
+ScrollReveal().reveal('.final', { delay: 300 });
